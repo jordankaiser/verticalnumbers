@@ -3,15 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Legal Process Flowchart</title>
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
 
-  <main>
-    <section>
-      <h1>Hello World</h1>
-    </section>
+  <main class="min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Container with vertical timeline line -->
+      <div class="relative">
+        <!-- Vertical connecting line in middle -->
+        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-teal-500 transform -translate-x-1/2"></div>
+        
+        <!-- Row 1: Stage 1 with Number 1 -->
+        <div class="flex items-center mb-16 relative">
+          <!-- Left: Stage 1 -->
+          <div class="flex-1 pr-8 text-right" id="stage-1">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">ARRAIGNMENT / DETENTION HEARING</h2>
+            <p class="text-sm">YOU ARE FORMALLY CHARGED AND THE JUDGE DECIDES IF YOU SHOULD BE DETAINED</p>
+          </div>
+          
+          <!-- Middle: Number 1 -->
+          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-1">
+            1
+          </div>
+          
+          <!-- Right: Empty for row 1 -->
+          <div class="flex-1 pl-8"></div>
+        </div>
+        
+        <!-- Row 1.5: Transfer Hearing (between 1 and 2) -->
+        <div class="flex items-center mb-16 relative">
+          <!-- Left: Empty -->
+          <div class="flex-1 pr-8"></div>
+          
+          <!-- Middle: Empty (no number here) -->
+          <div class="w-12 mx-8"></div>
+          
+          <!-- Right: Transfer Hearing -->
+          <div class="flex-1 pl-8" id="branch-1">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">TRANSFER HEARING</h2>
+            <p class="text-sm">THE JUDGE DECIDES IF YOU SHOULD BE TRIED IN ADULT COURT</p>
+          </div>
+        </div>
+        
+        <!-- Row 2: Stage 2 with Number 2 -->
+        <div class="flex items-center mb-16 relative">
+          <!-- Left: Stage 2 -->
+          <div class="flex-1 pr-8 text-right" id="stage-2">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">PRE-PLEA HEARING</h2>
+            <p class="text-sm">DISCUSS POSSIBLE RESOLUTIONS</p>
+          </div>
+          
+          <!-- Middle: Number 2 -->
+          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-2">
+            2
+          </div>
+          
+          <!-- Right: Empty for row 2 -->
+          <div class="flex-1 pl-8"></div>
+        </div>
+        
+        <!-- Row 2.5: Pre-Trial Motions (between 2 and 3) -->
+        <div class="flex items-center mb-16 relative">
+          <!-- Left: Empty -->
+          <div class="flex-1 pr-8"></div>
+          
+          <!-- Middle: Empty (no number here) -->
+          <div class="w-12 mx-8"></div>
+          
+          <!-- Right: Pre-Trial Motions -->
+          <div class="flex-1 pl-8" id="branch-2">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">PRE-TRIAL MOTIONS</h2>
+            <p class="text-sm">SPECIAL REQUESTS IF THERE IS ILLEGAL SEARCH AND SEIZURE, POLICE MISCONDUCT, ETC.</p>
+          </div>
+        </div>
+        
+        <!-- Row 3: Stage 3 with Number 3 -->
+        <div class="flex items-center mb-16 relative">
+          <!-- Left: Stage 3 -->
+          <div class="flex-1 pr-8 text-right" id="stage-3">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">PLEA BARGAIN / ADJUDICATION</h2>
+            <p class="text-sm">PLEAD GUILTY IN EXCHANGE FOR A LIGHTER SENTENCE - OR FIGHT THE CASE AND GO TO "TRIAL"</p>
+          </div>
+          
+          <!-- Middle: Number 3 -->
+          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-3">
+            3
+          </div>
+          
+          <!-- Right: Empty for row 3 -->
+          <div class="flex-1 pl-8"></div>
+        </div>
+        
+        <!-- Row 4: Stage 4 with Number 4 -->
+        <div class="flex items-center relative">
+          <!-- Left: Stage 4 -->
+          <div class="flex-1 pr-8 text-right" id="stage-4">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">DISPOSITION HEARING</h2>
+            <p class="text-sm">SIMILAR TO "SENTENCING"</p>
+          </div>
+          
+          <!-- Middle: Number 4 -->
+          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-4">
+            4
+          </div>
+          
+          <!-- Right: Empty for row 4 -->
+          <div class="flex-1 pl-8"></div>
+        </div>
+      </div>
+    </div>
   </main>
   
   <script src="js/script.js"></script>
