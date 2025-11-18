@@ -184,6 +184,9 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-1\/2 {
     right: calc(1/2 * 100%);
   }
