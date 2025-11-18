@@ -1,4 +1,5 @@
-@import url('reset.css');
+
+@import "tailwindcss";
 
 body {
   background-color: lightgray;

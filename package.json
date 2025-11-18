@@ -1,0 +1,14 @@
+{
+  "name": "yjnafrontend",
+  "version": "1.0.0",
+  "description": "A website component with numbers running vertically and text horizontally to the sides of the numbers.",
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.17",
+    "@tailwindcss/cli": "^4.1.17"
+  }
+}
+
