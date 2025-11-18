@@ -12,23 +12,23 @@
     <div class="max-w-6xl mx-auto">
       <!-- Container with vertical timeline line -->
       <div class="relative">
-        <!-- Vertical connecting line in middle -->
-        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-teal-500 transform -translate-x-1/2"></div>
+        <!-- Vertical connecting line - mobile: left side, desktop: middle -->
+        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-teal-500 md:transform md:-translate-x-1/2"></div>
         
         <!-- Row 1: Stage 1 with Number 1 -->
         <div class="flex items-center mb-16 relative">
           
-          <!-- Left: Stage 1 -->
-          <div class="flex-1 pr-8 text-right relative z-10" id="stage-1">
+          <!-- Left: Stage 1 (hidden on mobile, shown on desktop) -->
+          <div class="hidden md:block flex-1 pr-8 text-right relative z-10" id="stage-1">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">ARRAIGNMENT / DETENTION HEARING</h2>
             <p class="text-sm">YOU ARE FORMALLY CHARGED AND THE JUDGE DECIDES IF YOU SHOULD BE DETAINED</p>
           </div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8" id="number-1">
+          <div class="relative z-10 pr-4 md:px-8" id="number-1">
 
-            <!-- Horizontal line -->
-            <div class="absolute w-1/2 h-0.5 bg-teal-500 left-0 top-1/2 -translate-y-1/2"></div>
+            <!-- Horizontal line - mobile: right, desktop: left -->
+            <div class="absolute w-1/2 h-0.5 bg-teal-500 right-0 md:right-auto md:left-0 top-1/2 -translate-y-1/2"></div>
 
             <!-- Number -->
             <div class="relative w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
@@ -36,23 +36,27 @@
             </div>
           </div>
           
-          <!-- Right: Empty for row 1 -->
-          <div class="flex-1 pl-8"></div>
+          <!-- Right: Stage 1 text on mobile, empty on desktop -->
+          <div class="flex-1 pl-4 md:pl-8 md:hidden relative z-10 text-left" id="stage-1-mobile">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">ARRAIGNMENT / DETENTION HEARING</h2>
+            <p class="text-sm">YOU ARE FORMALLY CHARGED AND THE JUDGE DECIDES IF YOU SHOULD BE DETAINED</p>
+          </div>
+          <div class="hidden md:block flex-1 pl-8"></div>
         </div>
         
         <!-- Row 1.5: Transfer Hearing (between 1 and 2) -->
         <div class="flex items-center mb-16 relative">
-          <!-- Left: Empty -->
-          <div class="flex-1 pr-8"></div>
+          <!-- Left: Empty on desktop -->
+          <div class="hidden md:block flex-1 pr-8"></div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8">
-            <!-- Dashed horizontal line -->
+          <div class="relative z-10 pr-4 md:px-8">
+            <!-- Dashed horizontal line - always extends right -->
             <div class="absolute w-1/2 h-0.5 border-t-2 border-dashed border-teal-500 right-0 top-1/2 -translate-y-1/2"></div>
           </div>
           
           <!-- Right: Transfer Hearing -->
-          <div class="flex-1 pl-8 relative z-10" id="branch-1">
+          <div class="flex-1 pl-4 md:pl-8 relative z-10 text-left" id="branch-1">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">TRANSFER HEARING</h2>
             <p class="text-sm">THE JUDGE DECIDES IF YOU SHOULD BE TRIED IN ADULT COURT</p>
           </div>
@@ -60,16 +64,16 @@
         
         <!-- Row 2: Stage 2 with Number 2 -->
         <div class="flex items-center mb-16 relative">
-          <!-- Left: Stage 2 -->
-          <div class="flex-1 pr-8 text-right relative z-10" id="stage-2">
+          <!-- Left: Stage 2 (hidden on mobile, shown on desktop) -->
+          <div class="hidden md:block flex-1 pr-8 text-right relative z-10" id="stage-2">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">PRE-PLEA HEARING</h2>
             <p class="text-sm">DISCUSS POSSIBLE RESOLUTIONS</p>
           </div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8" id="number-2">
-            <!-- Horizontal line -->
-            <div class="absolute w-1/2 h-0.5 bg-teal-500 left-0 top-1/2 -translate-y-1/2"></div>
+          <div class="relative z-10 pr-4 md:px-8" id="number-2">
+            <!-- Horizontal line - mobile: right, desktop: left -->
+            <div class="absolute w-1/2 h-0.5 bg-teal-500 right-0 md:right-auto md:left-0 top-1/2 -translate-y-1/2"></div>
 
             <!-- Number -->
             <div class="relative w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
@@ -77,23 +81,27 @@
             </div>
           </div>
           
-          <!-- Right: Empty for row 2 -->
-          <div class="flex-1 pl-8"></div>
+          <!-- Right: Stage 2 text on mobile, empty on desktop -->
+          <div class="flex-1 pl-4 md:pl-8 md:hidden relative z-10 text-left" id="stage-2-mobile">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">PRE-PLEA HEARING</h2>
+            <p class="text-sm">DISCUSS POSSIBLE RESOLUTIONS</p>
+          </div>
+          <div class="hidden md:block flex-1 pl-8"></div>
         </div>
         
         <!-- Row 2.5: Pre-Trial Motions (between 2 and 3) -->
         <div class="flex items-center mb-16 relative">
-          <!-- Left: Empty -->
-          <div class="flex-1 pr-8"></div>
+          <!-- Left: Empty on desktop -->
+          <div class="hidden md:block flex-1 pr-8"></div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8">
-            <!-- Dashed horizontal line -->
+          <div class="relative z-10 pr-4 md:px-8">
+            <!-- Dashed horizontal line - always extends right -->
             <div class="absolute w-1/2 h-0.5 border-t-2 border-dashed border-teal-500 right-0 top-1/2 -translate-y-1/2"></div>
           </div>
           
           <!-- Right: Pre-Trial Motions -->
-          <div class="flex-1 pl-8 relative z-10" id="branch-2">
+          <div class="flex-1 pl-4 md:pl-8 relative z-10 text-left" id="branch-2">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">PRE-TRIAL MOTIONS</h2>
             <p class="text-sm">SPECIAL REQUESTS IF THERE IS ILLEGAL SEARCH AND SEIZURE, POLICE MISCONDUCT, ETC.</p>
           </div>
@@ -101,16 +109,16 @@
         
         <!-- Row 3: Stage 3 with Number 3 -->
         <div class="flex items-center mb-16 relative">
-          <!-- Left: Stage 3 -->
-          <div class="flex-1 pr-8 text-right relative z-10" id="stage-3">
+          <!-- Left: Stage 3 (hidden on mobile, shown on desktop) -->
+          <div class="hidden md:block flex-1 pr-8 text-right relative z-10" id="stage-3">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">PLEA BARGAIN / ADJUDICATION</h2>
             <p class="text-sm">PLEAD GUILTY IN EXCHANGE FOR A LIGHTER SENTENCE - OR FIGHT THE CASE AND GO TO "TRIAL"</p>
           </div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8" id="number-3">
-            <!-- Horizontal line -->
-            <div class="absolute w-1/2 h-0.5 bg-teal-500 left-0 top-1/2 -translate-y-1/2"></div>
+          <div class="relative z-10 pr-4 md:px-8" id="number-3">
+            <!-- Horizontal line - mobile: right, desktop: left -->
+            <div class="absolute w-1/2 h-0.5 bg-teal-500 right-0 md:right-auto md:left-0 top-1/2 -translate-y-1/2"></div>
 
             <!-- Number -->
             <div class="relative w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
@@ -118,22 +126,26 @@
             </div>
           </div>
           
-          <!-- Right: Empty for row 3 -->
-          <div class="flex-1 pl-8"></div>
+          <!-- Right: Stage 3 text on mobile, empty on desktop -->
+          <div class="flex-1 pl-4 md:pl-8 md:hidden relative z-10 text-left" id="stage-3-mobile">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">PLEA BARGAIN / ADJUDICATION</h2>
+            <p class="text-sm">PLEAD GUILTY IN EXCHANGE FOR A LIGHTER SENTENCE - OR FIGHT THE CASE AND GO TO "TRIAL"</p>
+          </div>
+          <div class="hidden md:block flex-1 pl-8"></div>
         </div>
         
         <!-- Row 4: Stage 4 with Number 4 -->
         <div class="flex items-center relative">
-          <!-- Left: Stage 4 -->
-          <div class="flex-1 pr-8 text-right relative z-10" id="stage-4">
+          <!-- Left: Stage 4 (hidden on mobile, shown on desktop) -->
+          <div class="hidden md:block flex-1 pr-8 text-right relative z-10" id="stage-4">
             <h2 class="text-xl font-semibold mb-2 text-teal-600">DISPOSITION HEARING</h2>
             <p class="text-sm">SIMILAR TO "SENTENCING"</p>
           </div>
           
           <!-- Middle -->
-          <div class="relative z-10 px-8" id="number-4">
-            <!-- Horizontal line -->
-            <div class="absolute w-1/2 h-0.5 bg-teal-500 left-0 top-1/2 -translate-y-1/2"></div>
+          <div class="relative z-10 pr-4 md:px-8" id="number-4">
+            <!-- Horizontal line - mobile: right, desktop: left -->
+            <div class="absolute w-1/2 h-0.5 bg-teal-500 right-0 md:right-auto md:left-0 top-1/2 -translate-y-1/2"></div>
 
             <!-- Number -->
             <div class="relative w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
@@ -141,8 +153,12 @@
             </div>
           </div>
           
-          <!-- Right: Empty for row 4 -->
-          <div class="flex-1 pl-8"></div>
+          <!-- Right: Stage 4 text on mobile, empty on desktop -->
+          <div class="flex-1 pl-4 md:pl-8 md:hidden relative z-10 text-left" id="stage-4-mobile">
+            <h2 class="text-xl font-semibold mb-2 text-teal-600">DISPOSITION HEARING</h2>
+            <p class="text-sm">SIMILAR TO "SENTENCING"</p>
+          </div>
+          <div class="hidden md:block flex-1 pl-8"></div>
         </div>
       </div>
     </div>
