@@ -17,8 +17,6 @@
         
         <!-- Row 1: Stage 1 with Number 1 -->
         <div class="flex items-center mb-16 relative">
-          <!-- Horizontal line from left text to number -->
-          <div class="absolute left-0 right-1/2 h-0.5 bg-teal-500 transform translate-x-1/2" style="right: calc(50% + 1.5rem);"></div>
           
           <!-- Left: Stage 1 -->
           <div class="flex-1 pr-8 text-right relative z-10" id="stage-1">
@@ -27,8 +25,11 @@
           </div>
           
           <!-- Middle: Number 1 -->
-          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-1">
-            1
+          <div class="relative z-10 px-8" id="number-1">
+            <div class="absolute w-1/2 h-0.5 bg-teal-500 left-0 top-1/2 -translate-y-1/2"></div>
+            <div class="relative w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
+              1
+            </div>
           </div>
           
           <!-- Right: Empty for row 1 -->
@@ -41,7 +42,7 @@
           <div class="flex-1 pr-8"></div>
           
           <!-- Middle: Empty (no number here) -->
-          <div class="w-12 mx-8"></div>
+          <div class="w-12 px-8"></div>
           
           <!-- Dashed horizontal line from middle to right text -->
           <div class="absolute left-1/2 h-0.5 border-t-2 border-dashed border-teal-500" style="left: calc(50% + 1.5rem); right: 0;"></div>
@@ -65,8 +66,10 @@
           </div>
           
           <!-- Middle: Number 2 -->
-          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-2">
-            2
+          <div class="relative z-10 px-8" id="number-2">
+            <div class="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
+              2
+            </div>
           </div>
           
           <!-- Right: Empty for row 2 -->
@@ -79,7 +82,7 @@
           <div class="flex-1 pr-8"></div>
           
           <!-- Middle: Empty (no number here) -->
-          <div class="w-12 mx-8"></div>
+          <div class="w-12 px-8"></div>
           
           <!-- Dashed horizontal line from middle to right text -->
           <div class="absolute left-1/2 h-0.5 border-t-2 border-dashed border-teal-500" style="left: calc(50% + 1.5rem); right: 0;"></div>
@@ -103,8 +106,10 @@
           </div>
           
           <!-- Middle: Number 3 -->
-          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-3">
-            3
+          <div class="relative z-10 px-8" id="number-3">
+            <div class="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
+              3
+            </div>
           </div>
           
           <!-- Right: Empty for row 3 -->
@@ -123,8 +128,10 @@
           </div>
           
           <!-- Middle: Number 4 -->
-          <div class="relative z-10 w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl mx-8" id="number-4">
-            4
+          <div class="relative z-10 px-8" id="number-4">
+            <div class="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold text-xl">
+              4
+            </div>
           </div>
           
           <!-- Right: Empty for row 4 -->
